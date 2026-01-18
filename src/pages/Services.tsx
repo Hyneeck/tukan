@@ -4,6 +4,7 @@ import { Section } from '@/components/Section'
 import { Grid } from '@/components/Grid'
 import { CTA } from '@/components/CTA'
 import { getSEO } from '@/lib/seo'
+import { spacing } from '@/lib/spacing'
 
 const seo = getSEO({
   title: 'Služby - Studio Tuka',

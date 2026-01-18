@@ -4,6 +4,7 @@ interface SectionProps {
   children: ReactNode
   variant?: 'default' | 'tight' | 'loose'
   className?: string
+  id?: string
 }
 
 /**
@@ -16,7 +17,8 @@ interface SectionProps {
 export function Section({ 
   children, 
   variant = 'default', 
-  className = '' 
+  className = '',
+  id
 }: SectionProps) {
   const paddingClasses = {
     default: 'py-[clamp(72px,10vw,160px)]',
@@ -25,7 +27,7 @@ export function Section({
   }
 
   return (
-    <section className={`${paddingClasses[variant]} ${className}`}>
+    <section id={id} className={`${paddingClasses[variant]} ${className}`}>
       {children}
     </section>
   )

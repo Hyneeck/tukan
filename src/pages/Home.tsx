@@ -1,5 +1,4 @@
 import { Helmet } from 'react-helmet-async'
-import { useState } from 'react'
 import { Container } from '@/components/Container'
 import { Section } from '@/components/Section'
 import { Grid } from '@/components/Grid'
@@ -7,7 +6,6 @@ import { Button } from '@/components/Button'
 import { FAQ } from '@/components/FAQ'
 import { Link } from 'react-router-dom'
 import { getSEO } from '@/lib/seo'
-import { spacing } from '@/lib/spacing'
 
 const seo = getSEO({
   title: 'Studio Tuka - Digitální studio',
